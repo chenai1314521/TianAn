@@ -1,0 +1,93 @@
+//
+//  PrefixHeader.pch
+//  TianAnRenShou
+//
+//  Created by han on 15/4/11.
+//  Copyright (c) 2015年 韩赵凯. All rights reserved.
+//
+
+#ifndef TianAnRenShou_PrefixHeader_pch
+#define TianAnRenShou_PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import "UIImage+HZK.h"
+#import "UIBarButtonItem+HZK.h"
+#import "UIView+Utils.h"
+
+
+#if DEBUG
+#define NSLog(FORMAT, ...) {\
+NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];\
+[dateFormatter setDateStyle:NSDateFormatterMediumStyle];\
+[dateFormatter setTimeStyle:NSDateFormatterShortStyle];\
+[dateFormatter setDateFormat:@"HH:mm:ss:SSS"]; \
+NSString *str = [dateFormatter stringFromDate:[NSDate date]];\
+fprintf(stderr,"\n[%s][%s:%d][%s][%s]\n",[str UTF8String], [[[NSString  stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__ ,__func__,[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);\
+}
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+
+
+// 颜色
+#define setColor(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+// 是否为iOS7
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+//是否为4英寸
+#define FourInch ([UIScreen mainScreen].bounds.size.height >= 568.0)
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+//沙盒路径
+#define kkDocumentsDirectory() ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0])
+
+
+
+/*
+ 三、补充
+ 
+ IOS开发中常用到的尺寸
+ 
+ 44 : cell的默认高度、导航栏的可见高度
+ 
+ 49 : UITabBar的默认高度
+ 
+ 64 : 从窗口顶部到导航栏底部
+ 
+ 20 : 状态栏高度
+ 
+ 320 : 竖屏情况下的屏幕宽度
+ 
+ 480 : 竖屏情况下的3.5 inch 的屏幕高度
+ 
+ 568 : 竖屏情况下的4.0 inch 的屏幕高度
+ 
+ 
+ */
+
+//朋友圈的设置信息
+#define ICON_TEXT_PADDING 10.0
+#define PADDING 12.0
+#define NAMEFONT [UIFont systemFontOfSize:14]
+#define TEXTFONT [UIFont systemFontOfSize:14]
+
+
+
+//个人用户设置信息
+#define DETAILLABELFONT  [UIFont systemFontOfSize:13]
+#define SUBTITLEIMAGEH 55
+#define PADDINGPERSON 8.0
+#define CurrentSystemVersion ([[[UIDevice currentDevice] systemVersion] floatValue])
+
+
+
+
+
+#warning 一定得设置登陆是否成功
+//判断是否登陆成功
+#define LOGINSUCCESS  /* DISABLES CODE */ (NO)
+
+
+#endif

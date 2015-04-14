@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="arrowImageView" destination="OZs-zu-ep4" id="qki-PC-ma8"/>
+                <outlet property="backgroundScrollView" destination="daC-aP-VMy" id="L6v-ZN-ds9"/>
+                <outlet property="loginBtn" destination="GHp-Rh-Epc" id="oAv-Zk-i5t"/>
+                <outlet property="loginView" destination="10h-4y-ggU" id="SDZ-8I-6im"/>
+                <outlet property="minView" destination="qOl-HK-xxW" id="DYd-Qw-Ozn"/>
+                <outlet property="userNameTextField" destination="HsY-LG-n9g" id="Cgl-Pm-Oc4"/>
+                <outlet property="userPwdTextField" destination="vXY-dC-eaN" id="W5F-0J-3gB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YMe-Ko-dly"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="daC-aP-VMy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="P4Z-q6-7i3">
+                            <rect key="frame" x="0.0" y="16" width="320" height="90"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" minimumFontSize="17" clearButtonMode="whileEditing" id="HsY-LG-n9g">
+                                    <rect key="frame" x="55" y="0.0" width="256" height="45"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" clearButtonMode="whileEditing" id="vXY-dC-eaN">
+                                    <rect key="frame" x="55" y="45" width="265" height="45"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_user.png" id="RqF-go-5h8">
+                                    <rect key="frame" x="16" y="12" width="22" height="22"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_password.png" id="gMG-wL-xxR">
+                                    <rect key="frame" x="16" y="57" width="22" height="22"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" id="jZb-zy-yl1">
+                                    <rect key="frame" x="15" y="45" width="305" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.89054790296052633" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GHp-Rh-Epc">
+                            <rect key="frame" x="15" y="121" width="290" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.28974046679999998" green="0.7290969262" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                            <state key="normal" title="登录" backgroundImage="denglu.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginBtnOnClick:" destination="-1" eventType="touchUpInside" id="NWE-kk-ykg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hN9-DG-OSu">
+                            <rect key="frame" x="230" y="176" width="70" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="忘记密码?">
+                                <color key="titleColor" red="0.097397195325023819" green="0.60571102417461753" blue="0.89054793119430542" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="forgetPwdOnClick:" destination="-1" eventType="touchUpInside" id="SJL-cG-sTs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="btm-7o-P3r"/>
+                        <outletCollection property="gestureRecognizers" destination="SxA-zu-TQL" appends="YES" id="BT7-r1-beM"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" id="10h-4y-ggU">
+                    <rect key="frame" x="0.0" y="480" width="320" height="154"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vf7-zv-POE">
+                            <rect key="frame" x="175" y="30" width="130" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="qq.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="qqBtnOnClick:" destination="-1" eventType="touchUpInside" id="6s0-sC-0rV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e0B-g1-Gc0">
+                            <rect key="frame" x="15" y="30" width="130" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="weixin.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="weixin:" destination="-1" eventType="touchUpInside" id="yGs-dc-HLg"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" id="qOl-HK-xxW">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiala.png" id="OZs-zu-ep4">
+                                    <rect key="frame" x="134" y="0.0" width="53" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="gGl-ZE-qUq" appends="YES" id="dPq-sw-W0y"/>
+                                    </connections>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VvP-g5-Iec">
+                            <rect key="frame" x="15" y="91" width="130" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="xinlang.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="xinlangBtnOnClick:" destination="-1" eventType="touchUpInside" id="qRb-2Y-h4W"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="OxO-kK-fA0" appends="YES" id="4Ye-lM-ooC"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="310" y="346"/>
+        </view>
+        <tapGestureRecognizer id="gGl-ZE-qUq">
+            <connections>
+                <action selector="arrowOnClick:" destination="-1" id="peX-qT-YQv"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="SxA-zu-TQL">
+            <connections>
+                <action selector="scrollViewOnClick:" destination="-1" id="uVo-B2-vdY"/>
+            </connections>
+        </tapGestureRecognizer>
+        <panGestureRecognizer cancelsTouchesInView="NO" delaysTouchesEnded="NO" minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="OxO-kK-fA0">
+            <connections>
+                <action selector="loginViewDrag:" destination="-1" id="8gl-Nn-vmo"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="denglu.png" width="580" height="81"/>
+        <image name="login_password.png" width="48" height="48"/>
+        <image name="login_user.png" width="48" height="48"/>
+        <image name="qq.png" width="261" height="83"/>
+        <image name="weixin.png" width="261" height="83"/>
+        <image name="xiala.png" width="138" height="32"/>
+        <image name="xinlang.png" width="261" height="83"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
